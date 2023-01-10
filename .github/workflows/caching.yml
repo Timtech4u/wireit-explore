@@ -18,6 +18,9 @@ jobs:
       # Install npm dependencies.
       - run: npm ci
 
+      # Setup Wireit globally
+      - run: npm install -g wireit
+
       # Run build. Wireit will automatically use
       # the GitHub Actions cache whenever possible.
       - run: npm run build
